@@ -1,10 +1,10 @@
-<robot name="robot">
+<robot name="snake">
 
 	<!-- * * * Link Definitions * * * -->
 
  	<link name="base_link">
 		<visual>
-		    <origin xyz="0 0 0" rpy="0 0 0"/>
+		    <origin xyz="0 0 0" rpy="0 0 0.785398"/>
          
 			<geometry>
 				<box size=".67 .67 .3"/>
@@ -61,6 +61,43 @@
       </collision>
 	</link>
 
+	<link name="body3">
+		<visual>
+		    <origin xyz=".34 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size=".67 .688 .3"/>
+			</geometry>
+			<material name="Cyan1">
+	       		<color rgba="0.3 0.15 0.9 1.0"/>
+	     	</material>
+		</visual>	
+
+		<collision>
+      <origin xyz=".34 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size=".67 .688 .3"/>
+			</geometry>
+      </collision>
+	</link>
+
+	<link name="arm3">
+		<visual>
+		    <origin xyz=".34 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size=".68 .67 .3"/>
+			</geometry>
+			<material name="Cyan1">
+	       		<color rgba="0.3 0.15 0.9 1.0"/>
+	     	</material>
+		</visual>	
+
+		<collision>
+      <origin xyz=".34 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size=".68 .67 .3"/>
+			</geometry>
+      </collision>
+	</link>
 
 	<link name="arm2">
 		<visual>
@@ -74,7 +111,7 @@
 		</visual>	
 
 		<collision>
-      <origin xyz=".16 0 0" rpy="0 0 1.57"/>
+      <origin xyz=".16 0 0" rpy="0 0 0"/>
 			<geometry>
 				<box size=".68 .67 .3"/>
 			</geometry>
@@ -100,6 +137,43 @@
       </collision>
 	</link>
 
+	<link name="body4">
+		<visual>
+		    <origin xyz="-.34 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size=".67 .688 .3"/>
+			</geometry>
+			<material name="Cyan1">
+	       		<color rgba="0.3 0.15 0.9 1.0"/>
+	     	</material>
+		</visual>	
+
+		<collision>
+      <origin xyz="-.34 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size=".67 .688 .3"/>
+			</geometry>
+      </collision>
+	</link>
+
+	<link name="arm4">
+		<visual>
+		    <origin xyz="-.34 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size=".68 .67 .3"/>
+			</geometry>
+			<material name="Cyan1">
+	       		<color rgba="0.3 0.15 0.9 1.0"/>
+	     	</material>
+		</visual>	
+
+		<collision>
+      <origin xyz="-.34 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size=".68 .67 .3"/>
+			</geometry>
+      </collision>
+	</link>
 	
 
   	<joint name="joint1" type="fixed">
@@ -134,5 +208,36 @@
 	<limit lower="-1" upper="1.0" effort="0.0" velocity="0.0"/> 
   	</joint>
 
+	<joint name="joint5" type="fixed">
+    <parent link="base_link"/>
+    <child link="body3"/>
+    <origin xyz="0.34 0 0"/>
+    <axis xyz="0 1 0"/>
+	<limit lower="-1" upper="1.0" effort="0.0" velocity="0.0"/> 
+  	</joint>
+
+	<joint name="joint6" type="revolute">
+    <parent link="body3"/>
+    <child link="arm3"/>
+    <origin xyz="0.68 0 0"/>
+    <axis xyz="0 1 0"/>
+	<limit lower="-1" upper="1.0" effort="0.0" velocity="0.0"/> 
+  	</joint>
+
+	<joint name="joint7" type="fixed">
+    <parent link="base_link"/>
+    <child link="body4"/>
+    <origin xyz="-0.34 0 0"/>
+    <axis xyz="0 1 0"/>
+	<limit lower="-1" upper="1.0" effort="0.0" velocity="0.0"/> 
+  	</joint>
+
+	<joint name="joint8" type="revolute">
+    <parent link="body4"/>
+    <child link="arm4"/>
+    <origin xyz="-0.68 0 0"/>
+    <axis xyz="0 1 0"/>
+	<limit lower="-1" upper="1.0" effort="0.0" velocity="0.0"/> 
+  	</joint>
 
 </robot>

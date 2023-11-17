@@ -1,10 +1,10 @@
-<robot name="robot">
+<robot name="snake">
 
 	<!-- * * * Link Definitions * * * -->
 
  	<link name="base_link">
 		<visual>
-		    <origin xyz="0 0 0" rpy="0 0 0"/>
+		    <origin xyz="0 0 0" rpy="0 0 0.0"/>
          
 			<geometry>
 				<box size=".67 .67 .3"/>
@@ -74,7 +74,7 @@
 		</visual>	
 
 		<collision>
-      <origin xyz=".16 0 0" rpy="0 0 1.57"/>
+      <origin xyz=".16 0 0" rpy="0 0 0"/>
 			<geometry>
 				<box size=".68 .67 .3"/>
 			</geometry>
@@ -133,6 +133,5 @@
     <axis xyz="1 0 0"/>
 	<limit lower="-1" upper="1.0" effort="0.0" velocity="0.0"/> 
   	</joint>
-
 
 </robot>
