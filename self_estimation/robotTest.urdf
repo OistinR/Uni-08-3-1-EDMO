@@ -27,7 +27,7 @@
     </inertial>
     <visual>
       <geometry>
-        <box size="0.68 0.67 0.3 "/>
+        <box size="0.67 0.67 0.3 "/>
       </geometry>
       <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
     </visual>
@@ -43,6 +43,6 @@
     <parent link="base_link"/>
     <child link="test"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="0.0 1.0 0.0" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
 </robot>

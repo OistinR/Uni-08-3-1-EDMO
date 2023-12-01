@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot name="Model_0">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="arm0">
+    <inertial>
+      <origin xyz="-0.23962245465850546 0.16118611972039165 0.08914217060350729" rpy="-0.131626540186478 0.5977905434181807 0.623364993355384"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="-0.23962245465850546 0.16118611972039165 0.08914217060350729" rpy="-0.131626540186478 0.5977905434181807 0.623364993355384"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="-0.23962245465850546 0.16118611972039165 0.08914217060350729" rpy="-0.131626540186478 0.5977905434181807 0.623364993355384"/>
+    </collision>
+  </link>
+  <link name="arm1">
+    <inertial>
+      <origin xyz="-0.48577845263135877 -0.2603335781079717 0.03175687028137891" rpy="-0.5552420975678576 0.780094912903942 0.37035079411214866"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="-0.48577845263135877 -0.2603335781079717 0.03175687028137891" rpy="-0.5552420975678576 0.780094912903942 0.37035079411214866"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="-0.48577845263135877 -0.2603335781079717 0.03175687028137891" rpy="-0.5552420975678576 0.780094912903942 0.37035079411214866"/>
+    </collision>
+  </link>
+  <link name="arm2">
+    <inertial>
+      <origin xyz="0.5257023431479391 0.2628003519493224 0.055301354689715254" rpy="-0.24685561912169776 0.2281973628126297 -0.9005807136670474"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.5257023431479391 0.2628003519493224 0.055301354689715254" rpy="-0.24685561912169776 0.2281973628126297 -0.9005807136670474"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.5257023431479391 0.2628003519493224 0.055301354689715254" rpy="-0.24685561912169776 0.2281973628126297 -0.9005807136670474"/>
+    </collision>
+  </link>
+  <joint name="0" type="revolute">
+    <limit effort="1.0" velocity="1.0" lower="-1.0" upper="1.0"/>
+    <parent link="base_link"/>
+    <child link="arm0"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.23962245465850546 0.16118611972039165 0.08914217060350729" rpy="-0.131626540186478 0.5977905434181807 0.623364993355384"/>
+  </joint>
+  <joint name="1" type="revolute">
+    <limit effort="1.0" velocity="1.0" lower="-1.0" upper="1.0"/>
+    <parent link="base_link"/>
+    <child link="arm1"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.48577845263135877 -0.2603335781079717 0.03175687028137891" rpy="-0.5552420975678576 0.780094912903942 0.37035079411214866"/>
+  </joint>
+  <joint name="2" type="revolute">
+    <limit effort="1.0" velocity="1.0" lower="-1.0" upper="1.0"/>
+    <parent link="base_link"/>
+    <child link="arm2"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.5257023431479391 0.2628003519493224 0.055301354689715254" rpy="-0.24685561912169776 0.2281973628126297 -0.9005807136670474"/>
+  </joint>
+</robot>
