@@ -9,8 +9,8 @@
 			<geometry>
 				<box size=".67 .67 .3"/>
 			</geometry>
-			<material name="r">
-	       		<color rgba="0.969, 0.129, 0.122"/>
+			<material name="c">
+	       		<color rgba="0 0.9 0.9 1.0"/>
 	     	</material>
 		</visual>	
 
@@ -30,7 +30,7 @@
 				<box size=".68 .67 .3"/>
 			</geometry>
 			<material name="Cyan1">
-	       		<color rgba="0.969, 0.129, 0.122"/>
+	       		<color rgba="0.3 0.15 0.9 1.0"/>
 	     	</material>
 		</visual>	
 
