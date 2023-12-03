@@ -48,6 +48,7 @@
       <geometry>
         <box size="0.67 0.67 0.3 "/>
       </geometry>
+      <material name="red"/>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     </visual>
     <collision>
@@ -71,4 +72,7 @@
     <axis xyz="1. 0. 0."/>
     <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
+  <material name="red">
+    <color rgba="0.969 0.129 0.122 1.   "/>
+  </material>
 </robot>
