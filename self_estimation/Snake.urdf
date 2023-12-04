@@ -100,8 +100,6 @@
       </collision>
 	</link>
 
-	
-
   	<joint name="joint1" type="fixed">
     <parent link="base_link"/>
     <child link="arm1"/>

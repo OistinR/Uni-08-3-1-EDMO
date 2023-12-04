@@ -4,7 +4,7 @@
 
  	<link name="base_link">
 		<visual>
-		    <origin xyz="0 0 0" rpy="0 0 0.785398"/>
+		    <origin xyz="0 0 0" rpy="0 0 0"/>
          
 			<geometry>
 				<box size=".67 .67 .3"/>
@@ -35,7 +35,6 @@
 		</visual>	
 
 		<collision>
-      <origin xyz=".16 0 0" rpy="0 0 1.57"/>
 			<geometry>
 				<box size=".68 .67 .3"/>
 			</geometry>
@@ -54,9 +53,9 @@
 		</visual>	
 
 		<collision>
-      <origin xyz=".16 0 0" rpy="0 0 0"/>
+				<origin xyz="0 .34 0" rpy="0 0 0"/>
 			<geometry>
-				<box size=".68 .67 .3"/>
+				<box size=".688 .67 .3"/>
 			</geometry>
       </collision>
 	</link>
@@ -73,7 +72,6 @@
 		</visual>	
 
 		<collision>
-      <origin xyz=".34 0 0" rpy="0 0 0"/>
 			<geometry>
 				<box size=".67 .688 .3"/>
 			</geometry>
@@ -92,7 +90,6 @@
 		</visual>	
 
 		<collision>
-      <origin xyz=".34 0 0" rpy="0 0 0"/>
 			<geometry>
 				<box size=".68 .67 .3"/>
 			</geometry>
@@ -111,7 +108,6 @@
 		</visual>	
 
 		<collision>
-      <origin xyz=".16 0 0" rpy="0 0 0"/>
 			<geometry>
 				<box size=".68 .67 .3"/>
 			</geometry>
@@ -130,7 +126,6 @@
 		</visual>	
 
 		<collision>
-      <origin xyz=".16 0 0" rpy="0 0 0"/>
 			<geometry>
 				<box size=".68 .67 .3"/>
 			</geometry>
@@ -149,7 +144,6 @@
 		</visual>	
 
 		<collision>
-      <origin xyz="-.34 0 0" rpy="0 0 0"/>
 			<geometry>
 				<box size=".67 .688 .3"/>
 			</geometry>
@@ -168,13 +162,11 @@
 		</visual>	
 
 		<collision>
-      <origin xyz="-.34 0 0" rpy="0 0 0"/>
 			<geometry>
 				<box size=".68 .67 .3"/>
 			</geometry>
       </collision>
 	</link>
-	
 
   	<joint name="joint1" type="fixed">
     <parent link="base_link"/>
