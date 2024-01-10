@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot name="Model_Models/Model_97.urdf4">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <material name="red"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="arm_0_arm1">
+    <inertial>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="arm_0_arm2">
+    <inertial>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="arm_2_arm1">
+    <inertial>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="arm_2_arm2">
+    <inertial>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="arm_3_arm1">
+    <inertial>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="arm_3_arm2">
+    <inertial>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="arm_Permutation_4_arm1">
+    <inertial>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="arm_Permutation_4_arm2">
+    <inertial>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <joint name="arm_0_jointBase" type="fixed">
+    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
+    <parent link="base_link"/>
+    <child link="arm_0_arm1"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 -0.11"/>
+  </joint>
+  <joint name="arm_0_joint1" type="revolute">
+    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
+    <parent link="arm_0_arm1"/>
+    <child link="arm_0_arm2"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="arm_2_jointBase" type="fixed">
+    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
+    <parent link="base_link"/>
+    <child link="arm_2_arm1"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.34 0.0 0.0" rpy="0.0 0.0 -1.77"/>
+  </joint>
+  <joint name="arm_2_joint1" type="revolute">
+    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
+    <parent link="arm_2_arm1"/>
+    <child link="arm_2_arm2"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="arm_3_jointBase" type="fixed">
+    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
+    <parent link="base_link"/>
+    <child link="arm_3_arm1"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.34 0.0 0.0" rpy="0.0 0.0 1.14"/>
+  </joint>
+  <joint name="arm_3_joint1" type="revolute">
+    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
+    <parent link="arm_3_arm1"/>
+    <child link="arm_3_arm2"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="arm_Permutation_4_jointBase" type="fixed">
+    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
+    <parent link="base_link"/>
+    <child link="arm_Permutation_4_arm1"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 -0.34 0.0" rpy="0.0 0.0 -3.003185307179587"/>
+  </joint>
+  <joint name="arm_Permutation_4_joint1" type="revolute">
+    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
+    <parent link="arm_Permutation_4_arm1"/>
+    <child link="arm_Permutation_4_arm2"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <material name="red">
+    <color rgba="0.969 0.129 0.122 1.   "/>
+  </material>
+</robot>
