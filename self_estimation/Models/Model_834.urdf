@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<robot name="Model_98">
+<robot name="Model_834">
   <link name="base_link">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
@@ -177,7 +177,7 @@
     <parent link="base_link"/>
     <child link="arm_0_arm1"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="0.34 0.0 0.0" rpy="0.0 0.0 -1.31"/>
+    <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 -0.02"/>
   </joint>
   <joint name="arm_0_joint1" type="revolute">
     <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
@@ -191,7 +191,7 @@
     <parent link="base_link"/>
     <child link="arm_1_arm1"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="-0.34 -0.34 0.0" rpy="0.0 0.0 0.35"/>
+    <origin xyz="0.0 -0.34 0.0" rpy="0.0 0.0 2.41"/>
   </joint>
   <joint name="arm_1_joint1" type="revolute">
     <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
@@ -205,7 +205,7 @@
     <parent link="base_link"/>
     <child link="arm_2_arm1"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="-0.34 0.0 0.0" rpy="0.0 0.0 1.38"/>
+    <origin xyz="0.34 0.0 0.0" rpy="0.0 0.0 -1.21"/>
   </joint>
   <joint name="arm_2_joint1" type="revolute">
     <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
@@ -219,7 +219,7 @@
     <parent link="base_link"/>
     <child link="arm_3_arm1"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="0.34 0.34 0.0" rpy="0.0 0.0 2.22"/>
+    <origin xyz="-0.34 -0.34 0.0" rpy="0.0 0.0 0.83"/>
   </joint>
   <joint name="arm_3_joint1" type="revolute">
     <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
