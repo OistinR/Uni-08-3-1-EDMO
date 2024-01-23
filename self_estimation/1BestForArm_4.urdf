@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<robot name="Model_Models/testPiece.urdf94">
+<robot name="Model_Models/testPiece.urdf90">
   <link name="base_link">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
@@ -18,6 +18,44 @@
         <box size="0.67 0.67 0.3 "/>
       </geometry>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="set0_arm1">
+    <inertial>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="set0_arm2">
+    <inertial>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.67 0.67 0.3 "/>
+      </geometry>
+      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
     </collision>
   </link>
   <link name="set1_arm1">
@@ -40,44 +78,6 @@
     </collision>
   </link>
   <link name="set1_arm2">
-    <inertial>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-      <mass value="1.0"/>
-      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
-    </inertial>
-    <visual>
-      <geometry>
-        <box size="0.67 0.67 0.3 "/>
-      </geometry>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-    </visual>
-    <collision>
-      <geometry>
-        <box size="0.67 0.67 0.3 "/>
-      </geometry>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-    </collision>
-  </link>
-  <link name="set2_arm1">
-    <inertial>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-      <mass value="1.0"/>
-      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
-    </inertial>
-    <visual>
-      <geometry>
-        <box size="0.67 0.67 0.3 "/>
-      </geometry>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-    </visual>
-    <collision>
-      <geometry>
-        <box size="0.67 0.67 0.3 "/>
-      </geometry>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-    </collision>
-  </link>
-  <link name="set2_arm2">
     <inertial>
       <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
       <mass value="1.0"/>
@@ -134,7 +134,7 @@
       <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
     </collision>
   </link>
-  <link name="arm_Permutation_94_arm1">
+  <link name="arm_Permutation_90_arm1">
     <inertial>
       <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
       <mass value="1.0"/>
@@ -153,7 +153,7 @@
       <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
     </collision>
   </link>
-  <link name="arm_Permutation_94_arm2">
+  <link name="arm_Permutation_90_arm2">
     <inertial>
       <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
       <mass value="1.0"/>
@@ -172,6 +172,20 @@
       <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
     </collision>
   </link>
+  <joint name="set0_jointBase" type="fixed">
+    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
+    <parent link="base_link"/>
+    <child link="set0_arm1"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0001448603526395746"/>
+  </joint>
+  <joint name="set0_joint1" type="revolute">
+    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
+    <parent link="set0_arm1"/>
+    <child link="set0_arm2"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
   <joint name="set1_jointBase" type="fixed">
     <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
     <parent link="base_link"/>
@@ -183,20 +197,6 @@
     <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
     <parent link="set1_arm1"/>
     <child link="set1_arm2"/>
-    <axis xyz="1. 0. 0."/>
-    <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
-  </joint>
-  <joint name="set2_jointBase" type="fixed">
-    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
-    <parent link="base_link"/>
-    <child link="set2_arm1"/>
-    <axis xyz="1. 0. 0."/>
-    <origin xyz="0.0 -0.34 0.0" rpy="0.0 0.0 -2.0821044779583477"/>
-  </joint>
-  <joint name="set2_joint1" type="revolute">
-    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
-    <parent link="set2_arm1"/>
-    <child link="set2_arm2"/>
     <axis xyz="1. 0. 0."/>
     <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
@@ -214,17 +214,17 @@
     <axis xyz="1. 0. 0."/>
     <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
-  <joint name="arm_Permutation_94_jointBase" type="fixed">
+  <joint name="arm_Permutation_90_jointBase" type="fixed">
     <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
     <parent link="base_link"/>
-    <child link="arm_Permutation_94_arm1"/>
+    <child link="arm_Permutation_90_arm1"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="-0.34 0.34 0.0" rpy="0.0 0.0 1.74"/>
+    <origin xyz="0.34 -0.34 0.0" rpy="0.0 0.0 0.49"/>
   </joint>
-  <joint name="arm_Permutation_94_joint1" type="revolute">
+  <joint name="arm_Permutation_90_joint1" type="revolute">
     <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
-    <parent link="arm_Permutation_94_arm1"/>
-    <child link="arm_Permutation_94_arm2"/>
+    <parent link="arm_Permutation_90_arm1"/>
+    <child link="arm_Permutation_90_arm2"/>
     <axis xyz="1. 0. 0."/>
     <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
