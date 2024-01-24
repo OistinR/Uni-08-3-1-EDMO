@@ -216,7 +216,7 @@
     <parent link="base_link"/>
     <child link="set0_arm1"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="0.0 -0.34 0.0" rpy="0.0 0.0 3.140996777702981"/>
+    <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 -0.3227299089599105"/>
   </joint>
   <joint name="set0_joint1" type="revolute">
     <dynamics damping="0.0" friction="10.0"/>
@@ -232,7 +232,7 @@
     <parent link="base_link"/>
     <child link="set1_arm1"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="-0.34 0.34 0.0" rpy="0.0 0.0 0.9982080703103466"/>
+    <origin xyz="0.34 -0.34 0.0" rpy="0.0 0.0 -2.8242980257441768"/>
   </joint>
   <joint name="set1_joint1" type="revolute">
     <dynamics damping="0.0" friction="10.0"/>
@@ -248,7 +248,7 @@
     <parent link="base_link"/>
     <child link="set2_arm1"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="0.34 0.34 0.0" rpy="0.0 0.0 -1.0760221271669443"/>
+    <origin xyz="-0.34 0.0 0.0" rpy="0.0 0.0 1.5712921478626276"/>
   </joint>
   <joint name="set2_joint1" type="revolute">
     <dynamics damping="0.0" friction="10.0"/>
@@ -261,10 +261,10 @@
   <joint name="set3_jointBase" type="fixed">
     <dynamics damping="0.0" friction="10.0"/>
     <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
-    <parent link="base_link"/>
+    <parent link="set2_arm2"/>
     <child link="set3_arm1"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="0.34 0.34 0.0" rpy="0.0 0.0 -1.0006509717523158"/>
+    <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
   <joint name="set3_joint1" type="revolute">
     <dynamics damping="0.0" friction="10.0"/>
@@ -280,7 +280,7 @@
     <parent link="base_link"/>
     <child link="set4_arm1"/>
     <axis xyz="1. 0. 0."/>
-    <origin xyz="-0.34 0.34 0.0" rpy="0.0 0.0 1.0755915533719016"/>
+    <origin xyz="0.34 0.0 0.0" rpy="0.0 0.0 -1.5697355063773173"/>
   </joint>
   <joint name="set4_joint1" type="revolute">
     <dynamics damping="0.0" friction="10.0"/>

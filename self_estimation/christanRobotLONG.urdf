@@ -190,44 +190,6 @@
       <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
     </collision>
   </link>
-  <link name="set6_arm1">
-    <inertial>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-      <mass value="1.0"/>
-      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
-    </inertial>
-    <visual>
-      <geometry>
-        <box size="0.67 0.67 0.3 "/>
-      </geometry>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-    </visual>
-    <collision>
-      <geometry>
-        <box size="0.67 0.67 0.3 "/>
-      </geometry>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-    </collision>
-  </link>
-  <link name="set6_arm2">
-    <inertial>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-      <mass value="1.0"/>
-      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
-    </inertial>
-    <visual>
-      <geometry>
-        <box size="0.67 0.67 0.3 "/>
-      </geometry>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-    </visual>
-    <collision>
-      <geometry>
-        <box size="0.67 0.67 0.3 "/>
-      </geometry>
-      <origin xyz="0.0 0.34 0.0" rpy="0.0 0.0 0.0"/>
-    </collision>
-  </link>
   <link name="base_link">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
@@ -283,7 +245,7 @@
   <joint name="set3_jointBase" type="fixed">
     <dynamics damping="0.0" friction="10.0"/>
     <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
-    <parent link="set1_arm2"/>
+    <parent link="set4_arm2"/>
     <child link="set3_arm1"/>
     <axis xyz="1. 0. 0."/>
     <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
@@ -325,22 +287,6 @@
     <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
     <parent link="set5_arm1"/>
     <child link="set5_arm2"/>
-    <axis xyz="1. 0. 0."/>
-    <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
-  </joint>
-  <joint name="set6_jointBase" type="fixed">
-    <dynamics damping="0.0" friction="10.0"/>
-    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
-    <parent link="set3_arm2"/>
-    <child link="set6_arm1"/>
-    <axis xyz="1. 0. 0."/>
-    <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
-  </joint>
-  <joint name="set6_joint1" type="revolute">
-    <dynamics damping="0.0" friction="10.0"/>
-    <limit effort="1.57" velocity="1.57" lower="-1.57" upper="1.57"/>
-    <parent link="set6_arm1"/>
-    <child link="set6_arm2"/>
     <axis xyz="1. 0. 0."/>
     <origin xyz="0.0 0.68 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
